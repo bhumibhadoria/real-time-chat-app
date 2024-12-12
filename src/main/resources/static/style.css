@@ -1,0 +1,140 @@
+/* Enhanced Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #4e54c8, #8f94fb);
+    color: white;
+}
+
+/* #name-from {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+} */
+
+#chat-room {
+    height: 100vh;
+    background: #2d3436;
+}
+
+.card {
+    border-radius: 10px;
+    background: #1e272e;
+    color: white;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+}
+
+#message-container-table {
+    width: 100%;
+    margin-top: 20px;
+}
+
+#message-container-table td {
+    background: #485460;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: #d2dae2;
+}
+
+#message-container-table td b {
+    color: #ff4757;
+}
+
+#send-btn, #logout {
+    margin-left: 10px;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0px 0px 5px #6a89cc;
+}
+
+
+.emoji {
+    font-size: 1.5rem; /* Makes the emojis larger for better visibility */
+    margin: 5px;
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+    transition: transform 0.2s; /* Adds a smooth zoom effect */
+}
+
+.emoji:hover {
+    transform: scale(1.2); /* Slightly enlarges the emoji on hover */
+}
+
+/* Page Styling */
+#name-from {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient background */
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Card for entering name */
+.name-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out; /* Subtle fade-in animation */
+}
+
+/* Input field styling */
+#name-value {
+    border: 2px solid #6a11cb;
+    border-radius: 25px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    width: 80%;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#name-value:focus {
+    border-color: #2575fc;
+    box-shadow: 0 0 10px rgba(37, 117, 252, 0.5);
+}
+
+/* Button styling */
+#login {
+    background-color: #2575fc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#login:hover {
+    background-color: #6a11cb;
+    transform: scale(1.05);
+}
+
+#login:active {
+    background-color: #4c91d5;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
