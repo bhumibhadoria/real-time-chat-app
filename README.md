@@ -32,3 +32,21 @@ Make sure you have the following installed:
 1. Clone the repository:
    ```bash
    git clone https://github.com/bhumibhadoria/real-time-chat-app.git
+
+## Project Structure
+
+### Backend (`src/main/java/com/chat/app/chatroomapp/`)
+
+- **`MessageController.java`**: Handles incoming WebSocket messages and broadcasts them to the clients.
+- **`Config.java`**: Configures WebSocket and STOMP endpoints for handling client-server communication.
+
+### Resources (`src/main/resources/`)
+
+- **`application.properties`**: Configuration file for application settings.
+
+### Frontend (`src/main/webapp/`)
+
+- **`index.html`**: The main page where users can input their name and start chatting. Contains the structure of the user interface for login and chat functionality.
+- **`style.css`**: Custom styling for the application, enhancing the visual appearance of the frontend.
+- **`script.js`**: JavaScript that handles WebSocket communication, UI interactions, and message sending/receiving between users.
+
